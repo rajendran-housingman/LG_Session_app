@@ -1,0 +1,51 @@
+<div class="wrapper">
+  <header class="main-header">
+    <a class="logo" href="/">
+      <span class="logo-mini" style="font-size: 14px;">
+        <b></b>
+        LGT
+      </span>
+      <span class="logo-lg">
+        <b>Lead Generation Tool</b>
+      </span>
+    </a>
+    <nav class="navbar navbar-static-top">
+      <a class="sidebar-toggle" data-toggle="offcanvas" href="#" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <%= render partial: '/shared/user_profile_info_section' %>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <aside class="main-sidebar">
+    <section class="sidebar">
+      <div class="user-panel">
+        <div class="pull-left image">
+          <%= image_tag "/assets/placeholder-img.jpg",:size=>"50x50", :class=>"img-circle" %>
+        </div>
+        <div class="pull-left info">
+          <p></p>
+          <a href="/sales_crm">
+            <i class="fa fa-circle text-success"></i>
+            ONLINE
+          </a>
+        </div>
+      </div>
+    </section>
+  </aside>
+  <div class="content-wrapper">
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <%= yield %>
+  </div>
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b>Version</b>
+      1.0.0
+    </div>
+  </footer>
+</div>

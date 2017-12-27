@@ -1,0 +1,20 @@
+<li class="dropdown user user-menu">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+    <%= image_tag "/assets/placeholder-img.jpg",:size=>"50x50", :class=>"user-image" %>
+    <span class="hidden-xs"><%=current_user.try(:first_name)%></span>
+  </a>
+  <ul class="dropdown-menu">
+    <li class="user-header">
+      <%= image_tag "/assets/placeholder-img.jpg",:size=>"50x50", :class=>"user-image" %>
+      <p><%=current_user.try(:first_name)%></p>
+    </li>
+    <li class="user-footer">
+      <div class="pull-left">
+        <a href="#" class="btn btn-default btn-flat">Profile</a>
+      </div>
+      <div class="pull-right">
+        <a href="/users/sign_out" class="btn btn-default btn-flat logout" data-method="delete" title="Sign out">Logout</a>
+      </div>
+    </li>
+  </ul>
+</li>
